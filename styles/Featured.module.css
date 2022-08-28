@@ -1,0 +1,41 @@
+.container {
+   height: calc(100vh - 100px);
+   background-color: #d1411e;
+   position: relative;
+   z-index: 1;
+   overflow: hidden;
+}
+
+.arrowContainer {
+   z-index: 2;
+   position: absolute;
+   width: 10%;
+   height: 20%;
+   top: 0;
+   bottom: 0;
+   margin: auto 2rem;
+   cursor: pointer;
+}
+
+.wrapper {
+   width: 300vw;
+   height: 100%;
+   display: flex;
+   transition: all 1.3s ease-in-out;
+}
+
+.imgContainer {
+   width: 100vw;
+   height: 100%;
+   position: relative;
+}
+
+.image {
+   filter: brightness(50%);
+}
+
+@media screen and (max-width: 480px) {
+   .container {
+      height: 50vh;
+   }
+}
